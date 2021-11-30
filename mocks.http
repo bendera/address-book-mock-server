@@ -1,0 +1,37 @@
+GET http://localhost:9999/api/contact-list HTTP/1.1
+
+###
+
+GET http://localhost:9999/api/contact/4 HTTP/1.1
+
+###
+
+POST http://localhost:9999/api/contact HTTP/1.1
+Content-Type: application/json
+
+{
+  "firstName": "John",
+  "lastName": "Doe",
+  "email": "jdoe@example.org",
+  "phone": "555-123456",
+  "location": "Budapest",
+  "introduction": "Lorem ipsum"
+}
+
+###
+DELETE http://localhost:9999/api/contact/3 HTTP/1.1
+
+###
+
+PATCH http://localhost:9999/api/contact/4 HTTP/1.1
+Content-Type: application/json
+
+{
+  "id": 4,
+  "firstName": "Oliver",
+  "lastName": "Banton",
+  "email": "Avis_Daugherty@gmail.com",
+  "phone": "1-391-320-1394",
+  "location": "Szeged",
+  "introduction": "Nulla laborum ipsa eum aut occaecati. Qui et magni facilis cumque iste pariatur quo. Impedit rem inventore quasi ea unde aut quas."
+}
